@@ -1,0 +1,13 @@
+datasets
+flask
+gensim
+keras
+nltk
+numpy
+pandas
+pickle
+pyngrok
+re
+scikit-learn
+streamlit
+tensorflow
