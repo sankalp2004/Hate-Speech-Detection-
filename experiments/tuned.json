@@ -1,0 +1,61 @@
+{
+  "best_config": {
+    "freeze_embeddings": true,
+    "class_weights": "none",
+    "lr": 0.001,
+    "epochs_run": 10,
+    "val_f1": 0.9121568844495542
+  },
+  "sweep": [
+    {
+      "freeze": true,
+      "weights": "none",
+      "lr": 0.001,
+      "val_f1": 0.9121568844495542,
+      "epochs": 10
+    },
+    {
+      "freeze": false,
+      "weights": "none",
+      "lr": 0.0005,
+      "val_f1": 0.9051316035233509,
+      "epochs": 9
+    },
+    {
+      "freeze": true,
+      "weights": "sqrt",
+      "lr": 0.001,
+      "val_f1": 0.8995065252847496,
+      "epochs": 11
+    },
+    {
+      "freeze": false,
+      "weights": "sqrt",
+      "lr": 0.0005,
+      "val_f1": 0.8960861869672875,
+      "epochs": 9
+    },
+    {
+      "freeze": true,
+      "weights": "balanced",
+      "lr": 0.001,
+      "val_f1": 0.8829161150375644,
+      "epochs": 15
+    },
+    {
+      "freeze": false,
+      "weights": "balanced",
+      "lr": 0.0005,
+      "val_f1": 0.8726799460458953,
+      "epochs": 7
+    }
+  ],
+  "test": {
+    "accuracy": 0.916885212830341,
+    "precision_w": 0.9074894950585998,
+    "recall_w": 0.916885212830341,
+    "f1_w": 0.9099803536423714,
+    "macro_f1": 0.7496491621016613,
+    "auc_macro": 0.9402472232193496
+  }
+}

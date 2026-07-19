@@ -1,9 +1,31 @@
-__pycache__/ 
-*.pyc 
-*.ipynb_checkpoints 
-.DS_Store 
-.env 
-venv/ 
-*.pkl 
-*.h5 
-*.log 
+__pycache__/
+*.pyc
+*.ipynb_checkpoints
+.DS_Store
+.env
+venv/
+*.pkl
+*.h5
+*.log
+
+# Documents, reports and presentations are kept out of the repo
+*.pdf
+*.doc
+*.docx
+*.ppt
+*.pptx
+*.odt
+*.rtf
+
+# Word / Office lock files
+~$*
+
+# Plagiarism report drop folder (contains submission paperwork)
+plagiarism/
+
+# Report / presentation generators: these embed personal contact details
+# (registration number, email, phone) and are kept local.
+experiments/build2.py
+experiments/buildppt.py
+experiments/letters.py
+experiments/pagemap.py
